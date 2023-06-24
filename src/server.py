@@ -28,7 +28,7 @@ def get_mid_car_pay_ascending_data():
     mid_career_pay_dic = df[["Mid-Career Pay", "id"]].sort_values("Mid-Career Pay").to_dict(orient="records")
     return jsonify(mid_career_pay_dic)
 
-## Early Career Pay column data
+## Early Career Pay column data & ascending
 @app.route("/r_sal_maj/ear_career_pay_all")
 def get_ear_car_pay_data():
     ear_career_pay = df[["Early Career Pay", "id"]].to_dict(orient="records")
@@ -45,7 +45,7 @@ def get_major_data():
     major = df[["Major", "id"]].to_dict(orient="records")
     return jsonify(major)
 
-## High Meaning % column data
+## High Meaning % column data & ascendign
 @app.route("/r_sal_maj/high_meaning_all")
 def get_high_meaning_data():
     high_meaning = df[["High Meaning %", "id"]].to_dict(orient="records")
@@ -70,7 +70,7 @@ def get_mid_career_pay_ascending():
     mid_career_pay_ascending_dic = mid_career_pay_ascending_df.to_dict(orient="records")
     return jsonify(mid_career_pay_ascending_dic[:10])
 
-@app.route("/r_sal_maj/ear_career_pay_ascending/<int:page>")   # page choice
+@app.route("/r_sal_maj/mid_career_pay_ascending/<int:page>")   # page choice
 def get_mid_career_pay_ascending_page(page):
     df["Mid-Career Pay"] = pd.to_numeric(df["Mid-Career Pay"])
     mid_career_pay_ascending_df = df.sort_values(by="Mid-Career Pay")
@@ -121,7 +121,7 @@ def get_ear_career_pay_ascending_page(page):
     else:
         return jsonify(ear_career_pay_ascending_dic[next_page - 10:next_page])
 
-## early career pay josn data : ascending order 
+## early career pay josn data : deascending order 
 @app.route("/r_sal_maj/ear_career_pay_deascending")   # page 1
 def get_ear_career_pay_deascending():
     df["Early Career Pay"] = pd.to_numeric(df["Early Career Pay"])
@@ -180,6 +180,9 @@ def get_high_meaning_descending_page(page):
         return jsonify(high_meaning_descending_dic[next_page - 10:next_page])
 
 
+
+
+# 데이터 분석 결과물 API
 
 
 
