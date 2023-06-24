@@ -58,7 +58,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 36900,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Mental Health",
     "Mid-Career Pay": 45000,
     "Unnamed: 0": 824,
@@ -67,7 +67,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 36000,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Medical Assisting",
     "Mid-Career Pay": 44800,
     "Unnamed: 0": 825,
@@ -83,6 +83,44 @@
     "id": 827
   }
 ]
+```
+
+<br />
+
+- max 데이터
+  - /r_sal_maj/ear_career_pay/max
+  - /r_sal_maj/mid_career_pay/max
+  - /r_sal_maj/high_meaning/max
+
+```json
+{
+  "Degree Type": "Bachelors",
+  "Early Career Pay": 108500,
+  "High Meaning %": 46.0,
+  "Major": "Electrical Engineering & Computer Science (EECS)",
+  "Mid-Career Pay": 159300,
+  "Unnamed: 0": 2,
+  "id": 3
+}
+```
+
+<br />
+
+- min 데이터
+  - /r_sal_maj/ear_career_pay/min
+  - /r_sal_maj/mid_career_pay/min
+  - /r_sal_maj/high_meaning/min
+
+```json
+{
+  "Degree Type": "Bachelors",
+  "Early Career Pay": 34500,
+  "High Meaning %": 57.0,
+  "Major": "Voice & Opera",
+  "Mid-Career Pay": 53300,
+  "Unnamed: 0": 804,
+  "id": 805
+}
 ```
 
 <br />
@@ -238,7 +276,7 @@
   }
   ...
   {
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "id": 826
   },
   {
@@ -260,11 +298,11 @@
   }
   ...
   {
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "id": 825
   },
   {
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "id": 826
   }
 ]
@@ -299,7 +337,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 36900,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Educational Psychology",
     "Mid-Career Pay": 51200,
     "Unnamed: 0": 814,
@@ -344,7 +382,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 38800,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Hospitality & The Culinary Arts",
     "Mid-Career Pay": 52900,
     "Unnamed: 0": 809,
@@ -362,7 +400,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 45600,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Human Services Management",
     "Mid-Career Pay": 53000,
     "Unnamed: 0": 808,
@@ -393,7 +431,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 36000,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Medical Assisting",
     "Mid-Career Pay": 44800,
     "Unnamed: 0": 825,
@@ -402,7 +440,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 36900,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Mental Health",
     "Mid-Career Pay": 45000,
     "Unnamed: 0": 824,
@@ -429,7 +467,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 39200,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Rehabilitation Counseling",
     "Mid-Career Pay": 46400,
     "Unnamed: 0": 821,
@@ -497,7 +535,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 35600,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Psychology & Human Services",
     "Mid-Career Pay": 59400,
     "Unnamed: 0": 764,
@@ -524,7 +562,7 @@
   {
     "Degree Type": "Bachelors",
     "Early Career Pay": 36000,
-    "High Meaning %": NaN,
+    "High Meaning %": 0.0,
     "Major": "Medical Assisting",
     "Mid-Career Pay": 44800,
     "Unnamed: 0": 825,
@@ -766,3 +804,7 @@
   }
 ]
 ```
+
+<br />
+
+- 데이터 분석

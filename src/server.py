@@ -5,13 +5,56 @@ app = Flask(__name__)
 
 # Relationship between annual salary and college major
 df = pd.read_csv("./static/data/major_early_data.csv", thousands = ',')
-
+df["High Meaning %"] = df['High Meaning %'].fillna(0)
 
 # Relationship between annual salary and college major : all data
 @app.route('/r_sal_maj')
 def get_all_data():
     r_sal_maj = df.to_dict(orient="records")
     return jsonify(r_sal_maj)
+
+# max data
+## Early Career Pay max
+@app.route('/r_sal_maj/ear_career_pay/max')
+def get_ear_career_pay_max_data():
+    max_index = df["Early Career Pay"].idxmax()
+    data = df.loc[max_index].to_dict()
+    return jsonify(data)
+## Mid-Career Pay max
+@app.route('/r_sal_maj/mid_career_pay/max')
+def get_mid_career_pay_max_data():
+    max_index = df["Mid-Career Pay"].idxmax()
+    data = df.loc[max_index].to_dict()
+    return jsonify(data)
+
+## High Meaning & max
+@app.route('/r_sal_maj/high_meaning/max')
+def get_high_meaning_max_data():
+    max_index = df["High Meaning &"].idxmax()
+    data = df.loc[max_index].to_dict()
+    return jsonify(data)
+
+
+# min data
+## Early Career Pay min
+@app.route('/r_sal_maj/ear_career_pay/min')
+def get_ear_career_pay_min_data():
+    min_index = df["Early Career Pay"].idxmin()
+    data = df.loc[min_index].to_dict()
+    return jsonify(data)
+## Mid-Career Pay min
+@app.route('/r_sal_maj/mid_career_pay/min')
+def get_mid_career_pay_min_data():
+    min_index = df["Mid-Career Pay"].idxmin()
+    data = df.loc[min_index].to_dict()
+    return jsonify(data)
+
+## High Meaning & min
+@app.route('/r_sal_maj/high_meaning/min')
+def get_high_meaning_min_data():
+    min_index = df["High Meaning &"].idxmin()
+    data = df.loc[min_index].to_dict()
+    return jsonify(data)
 
 
 
@@ -184,7 +227,7 @@ def get_high_meaning_descending_page(page):
 
 # 데이터 분석 결과물 API
 
-
+# df.groupby(by="")
 
 
 if __name__ == "__main__":

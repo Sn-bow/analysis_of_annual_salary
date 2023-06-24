@@ -13,3 +13,12 @@ df = pd.read_csv("./static/data/major_early_data.csv", thousands = ',')
 print(df)
 print("\n\n\n\n")
 print("====" * 30)
+
+print(df.isna())
+# print(df.dropna())
+print(df)
+df["High Meaning %"] = df['High Meaning %'].fillna(0)
+print(df)
+
+# a = df[["Major","id","Early Career Pay", "Mid-Career Pay", "High Meaning %"]].groupby(by="Major").mean()
+# print(a)
