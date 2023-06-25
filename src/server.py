@@ -1,6 +1,7 @@
 import pandas as pd
 from flask import Flask, jsonify
 
+
 app = Flask(__name__)
 
 # Relationship between annual salary and college major
@@ -227,7 +228,6 @@ def get_high_meaning_descending_page(page):
 
 # 데이터 분석 결과물 API
 
-# df.groupby(by="")
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@
 ## API
 
 - 전체 데이터
-  - /r_sal_maj
+  - `/r_sal_maj`
 
 ```json
 [
@@ -88,9 +88,9 @@
 <br />
 
 - max 데이터
-  - /r_sal_maj/ear_career_pay/max
-  - /r_sal_maj/mid_career_pay/max
-  - /r_sal_maj/high_meaning/max
+  - `/r_sal_maj/ear_career_pay/max`
+  - `/r_sal_maj/mid_career_pay/max`
+  - `/r_sal_maj/high_meaning/max`
 
 ```json
 {
@@ -107,9 +107,9 @@
 <br />
 
 - min 데이터
-  - /r_sal_maj/ear_career_pay/min
-  - /r_sal_maj/mid_career_pay/min
-  - /r_sal_maj/high_meaning/min
+  - `/r_sal_maj/ear_career_pay/min`
+  - `/r_sal_maj/mid_career_pay/min`
+  - `/r_sal_maj/high_meaning/min`
 
 ```json
 {
@@ -126,11 +126,11 @@
 <br />
 
 - Mid-Career Pay 컬럼 데이터 & 내림차순
-  - /r_sal_maj/mid_career_pay_all
-  - /r_sal_maj/mid_career_pay_all/ascending
+  - `/r_sal_maj/mid_career_pay_all`
+  - `/r_sal_maj/mid_career_pay_all/ascending`
 
 ```json
-// /r_sal_maj/mid_career_pay_all
+/r_sal_maj/mid_career_pay_all
 
 [
   {
@@ -152,7 +152,7 @@
   }
 ]
 
-// /r_sal_maj/mid_career_pay_all/ascending
+/r_sal_maj/mid_career_pay_all/ascending
 
 [
   {
@@ -179,8 +179,8 @@
 <br />
 
 - Early Career Pay 컬럼 데이터 & 내림차순
-  - /r_sal_maj/ear_career_pay_all
-  - /r_sal_maj/ear_career_pay_all/ascending
+  - `/r_sal_maj/ear_career_pay_all`
+  - `/r_sal_maj/ear_career_pay_all/ascending`
 
 ```json
 /r_sal_maj/ear_career_pay_all
@@ -232,7 +232,7 @@
 <br />
 
 - Major 컬럼 데이터
-  - /r_sal_maj/major_all
+  - `/r_sal_maj/major_all`
 
 ```json
 [
@@ -259,8 +259,8 @@
 <br />
 
 - High Meaning % 컬럼 데이터 & 내림차순
-  - /r_sal_maj/high_meaning_all
-  - /r_sal_maj/high_meaning_all/ascending
+  - `/r_sal_maj/high_meaning_all`
+  - `/r_sal_maj/high_meaning_all/ascending`
 
 ```json
 /r_sal_maj/high_meaning_all
@@ -311,8 +311,8 @@
 <br />
 
 - Mid carrer Pay 컬럼이 내림차순 오름차순인 전체 데이터 : page당 10개 데이터
-  - /r_sal_maj/mid_career_pay_ascending/\<int:page\>
-  - /r_sal_maj/mid_career_pay_ascending/\<int:page\>
+  - `/r_sal_maj/mid_career_pay_ascending/<int:page>`
+  - `/r_sal_maj/mid_career_pay_ascending/<int:page>`
 
 ```json
 [
@@ -412,8 +412,8 @@
 <br />
 
 - early career pay 컬럼이 내림차순, 오름차순인 전체 데이터 : page당 10개 데이터
-  - /r_sal_maj/ear_career_pay_ascending/\<int:page\>
-  - /r_sal_maj/ear_career_pay_deascending/\<int:page\>
+  - `/r_sal_maj/ear_career_pay_ascending/<int:page>`
+  - `/r_sal_maj/ear_career_pay_deascending/<int:page>`
 
 ```json
 // ascending
@@ -610,8 +610,8 @@
 <br />
 
 - high meaning 컬럼이 내림차순, 오름차순인 전체 데이터
-  - /r_sal_maj/high_meaning_ascending/\<int:page\>
-  - /r_sal_maj/high_meaning_descending/\<int:page\>
+  - `/r_sal_maj/high_meaning_ascending/<int:page>`
+  - `/r_sal_maj/high_meaning_descending/<int:page>`
 
 ```json
 // ascending
